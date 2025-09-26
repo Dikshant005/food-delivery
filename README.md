@@ -5,14 +5,6 @@ Built with **Flutter**, **BLoC** state-management, **clean architecture**, and 1
 
 ---
 
-## 🎬 Screenshots
-
-| Restaurant List | Menu | Cart | Order Success |
-|-----------------|------|------|---------------|
-| ![list](screenshots/list.png) | ![menu](screenshots/menu.png) | ![cart](screenshots/cart.png) | ![success](screenshots/success.png) |
-
----
-
 ## ✅ Features
 
 - Browse local restaurants (big hero photos, rating, ETA)
@@ -25,10 +17,7 @@ Built with **Flutter**, **BLoC** state-management, **clean architecture**, and 1
 ---
 
 ## 🏗️ Architecture
-Markdown
-Copy
-Code
-Preview
+
 # Food Delivery Workflow – Flutter + BLoC
 
 A single-flow food-ordering demo that lets users pick a restaurant, browse the menu, add items to cart, and place an order.  
@@ -44,33 +33,12 @@ Built with **Flutter**, **BLoC** state-management, **clean architecture**, and 1
 
 ---
 
-## ✅ Features
-
-- Browse local restaurants (big hero photos, rating, ETA)
-- Tap restaurant → menu screen with item photos & availability
-- Add / remove items – live cart badge
-- Place order – fake 1 s network call, order-ID returned
-- Error handling for sold-out & network failures
-- **BLoC** state-management + **clean folders** + **unit tests**
-
----
-
-## 🏗️ Architecture
-lib/
-├── bloc/          # Business logic (Restaurant, Menu, Cart)
-├── models/        # Plain data classes
-├── repos/         # Data sources (assets)
-├── screens/       # UI pages
-└── main.dart      # App bootstrap
-
-
----
 
 ## ⚙️ Setup & Run
 
 1. **Clone**
    ```bash
-   git clone https://github.com/YOUR_NAME/food_workflow.git
+   git clone https://github.com/Dikshant005/food-delivery.git
    cd food_workflow
 2. **Install**
     ```bash
