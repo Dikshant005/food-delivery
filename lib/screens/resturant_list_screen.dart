@@ -14,22 +14,13 @@ class RestaurantListScreen extends StatelessWidget {
       appBar: AppBar(title: const Text('Restaurants')),
       body: BlocBuilder<RestaurantBloc, RestaurantState>(
         builder: (context, state) {
-          // DEBUG
-          print(
-            '[RestaurantListScreen] state runtimeType = ${state.runtimeType}',
-          );
-
           if (state is RestaurantLoading) {
             return const Center(child: CircularProgressIndicator());
           }
           if (state is RestaurantError) {
-            print('[RestaurantListScreen] error message: ${state.message}');
             return Center(child: Text(state.message));
           }
           if (state is RestaurantLoaded) {
-            print(
-              '[RestaurantListScreen] loaded count: ${state.restaurants.length}',
-            );
             return ListView.builder(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               itemCount: state.restaurants.length,

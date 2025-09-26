@@ -3,7 +3,7 @@ import 'package:equatable/equatable.dart';
 import 'package:food_delivery/models/resturant.dart';
 import 'package:food_delivery/repo/resturant_repo.dart';
 
-/* ---------- EVENTS ---------- */
+// EVENTS
 abstract class RestaurantEvent extends Equatable {
   const RestaurantEvent();
   @override
@@ -12,7 +12,7 @@ abstract class RestaurantEvent extends Equatable {
 
 class LoadRestaurants extends RestaurantEvent {}
 
-/* ---------- STATES ---------- */
+// STATES 
 abstract class RestaurantState extends Equatable {
   const RestaurantState();
   @override
@@ -37,7 +37,7 @@ class RestaurantError extends RestaurantState {
   List<Object> get props => [message];
 }
 
-/* ---------- BLOC ---------- */
+// BLOC
 class RestaurantBloc extends Bloc<RestaurantEvent, RestaurantState> {
   final RestaurantRepo repo;
   RestaurantBloc(this.repo) : super(RestaurantInitial()) {

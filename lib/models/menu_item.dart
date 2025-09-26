@@ -23,7 +23,6 @@ class MenuItem extends Equatable {
         image: json['image'],
       );
 
-  // ➜  copyWith  is  part  of  the  class
   MenuItem copyWith({
     String? id,
     String? name,

@@ -4,7 +4,7 @@ import 'package:food_delivery/repo/order_repo.dart';
 import '../models/menu_item.dart';
 import '../models/cart.dart';
 
-/* ---------- EVENTS ---------- */
+// EVENTS 
 abstract class CartEvent extends Equatable {
   const CartEvent();
   @override
@@ -20,7 +20,7 @@ class ClearCart extends CartEvent {}
 
 class PlaceOrder extends CartEvent {}
 
-/* ---------- STATES ---------- */
+// STATES 
 abstract class CartState extends Equatable {
   final Cart cart;
   const CartState(this.cart);
@@ -43,7 +43,7 @@ class OrderFailure extends CartState {
   const OrderFailure(super.cart);
 }
 
-/* ---------- BLOC ---------- */
+// BLOC 
 class CartBloc extends Bloc<CartEvent, CartState> {
   final OrderRepo _orderRepo = OrderRepo();
 
