@@ -39,7 +39,6 @@ Built with **Flutter**, **BLoC** state-management, **clean architecture**, and 1
 1. **Clone**
    ```bash
    git clone https://github.com/Dikshant005/food-delivery.git
-   cd food_workflow
 2. **Install**
     ```bash
     flutter pub get
