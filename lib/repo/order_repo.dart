@@ -1,0 +1,11 @@
+import '../models/cart.dart';
+
+class OrderRepo {
+  Future<String> placeOrder(Cart cart) async {
+    await Future.delayed(const Duration(seconds: 1)); // fake network
+    if (cart.items.any((e) => !e.item.available)) {
+      throw Exception('Some items are no longer available');
+    }
+    return 'order_${DateTime.now().millisecondsSinceEpoch}';
+  }
+}
